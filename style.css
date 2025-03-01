@@ -1,0 +1,214 @@
+:root {
+    --color-primary: #022cfa;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #0983f5;
+    --color-button-hover: #3d03c5;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif; /* Fonte base para o corpo */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+.header-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Seção de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.main-title:hover {
+    color: black;
+    font-size: 50px;
+    text-shadow: 2px 2px 0 #e0d2d2, 4px 4px 0 #e29898, 6px 6px 0 #dfb3b3, 8px 8px 0 #FF0000;
+    display: inline-block;
+    transform: rotate(-15deg); 
+      
+      
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: black;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.name-list {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+
+.name-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.result-list {
+    margin-top: 15px;
+    color: #0e012c;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botões */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.button-remove {
+      background-color: rgb(5, 0, 1);
+      color: yellow;
+      font-size: 10px;
+      border-radius: 0 15px 15px 0;
+      cursor: pointer;
+      padding: 5px 5px;
+      font-size: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-remove:hover {
+    background-color: rgb(236, 8, 8);
+    color: rgb(5, 5, 5);
+}
+
+button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-draw, .button-reiniciar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightblue;
+    background-color: blue;
+    font-size: 16px;
+    gap: 10px;
+    width: 220px;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-draw img, .button-reiniciar img {
+    width: 20px;
+    height: 20px;
+}
+
+.button-draw:hover, .button-reiniciar:hover {
+    background-color: lightblue;
+    color: blue
+}
+
+
